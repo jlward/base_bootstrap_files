@@ -1,0 +1,15 @@
+[run]
+source = .
+branch = True
+concurrency = multiprocessing
+omit =
+    *tests*.py
+    manage.py
+    *asgi.py
+    *wsgi.py
+    testing/*
+
+[report]
+show_missing = True
+skip_covered = True
+fail_under = 90
